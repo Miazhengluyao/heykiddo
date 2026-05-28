@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { MapPin, ChevronRight } from "lucide-react";
 
 const moods = [
   { id: "burn", title: "👶 Toddler Energy Burn", desc: "Let them run it out", color: "from-orange-100 to-orange-50" },
@@ -95,7 +94,7 @@ export default function App() {
                       </div>
                     </div>
 
-                    <ChevronRight className="w-5 h-5 text-gray-400" />
+                    <span className="text-gray-400 text-xl">→</span>
                   </div>
                 </button>
               ))}
@@ -140,7 +139,7 @@ export default function App() {
 
                     <div>
                       <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/80 backdrop-blur text-xs text-gray-600 mb-3">
-                        <MapPin className="w-3 h-3" />
+                        <span>📍</span>
                         Topeka, Kansas
                       </div>
 
